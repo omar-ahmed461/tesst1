@@ -1,0 +1,53 @@
+*{
+    box-sizing:border-box;
+	margin:0;
+}
+
+body{
+    min-height:100vh;
+    background-color:#545b7c;
+    --fluid: clamp(1rem, 1rem + 3vw, 2rem);
+    font-size: var(--fluid);
+    font-family: 'Aboreto', system-ui;
+    display: grid;
+    place-content: center;
+}
+
+
+.face{
+    display:flex;
+    flex-direction: column;   /* stack vertically */
+    align-items:center;       /* center horizontally */
+    gap:24px;
+}
+
+
+.eyes{
+ display: flex;
+ gap:6px;
+}
+
+
+.eye{
+	border-radius: 50%;
+	width: 4.5rem;
+	aspect-ratio: 1/1;
+	background-color: #ececec;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.eyeball{
+	width: 1.5rem;
+	aspect-ratio: 1/1;
+	background-color: #222;
+	border-radius: 50%;
+	transition: translate 0.05s ease-out;
+}
+.mouth{
+	width: 3rem;
+	height: 2rem;
+	border-bottom: 1rem solid gold;
+	border-radius: 50%;
+	rotate;-15deg;
+}
